@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Q-CEG</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- CSS
+        ================================================ -->
+        <!-- Owl Carousel -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+        <!-- bootstrap.min css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Font-awesome.min css -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/animate.min.css">
+
+		<link rel="stylesheet" href="css/main.css">
+        <!-- Responsive Stylesheet -->
+		<link rel="stylesheet" href="css/responsive.css">
+		<!-- Js -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+	</head>
+	<body>
+	
+	
+	<nav id="navigation" style="margin-top:91px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <nav class="navbar navbar-default">
+                          <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                                  <a class="navbar-brand" href="index.php">
+                                    <h3>Q-CEG</h3>
+                                  </a>
+
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                              <ul class="nav navbar-nav navbar-right" id="top-nav">
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="about.php">about us</a></li>
+                                <li><a href="search.php">Search Questions</a></li>
+                                <li><a href="upload.php">Upload Questions</a></li>
+                                <!--li><a href="#subscribe">news</a></li-->
+                                <li><a href="contact.php">contact</a></li>
+                              </ul>
+                            </div><!-- /.navbar-collapse -->
+                          </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .container close -->
+	</nav><!-- header close -->
+    
+    <section id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h1 class="heading wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms"><span>Register</span></h1>
+                        <br><br>
+                        <!--form-->
+                        <form class="form-horizontal" role="form" action="newuser.php" method="POST">
+                        <div class="form-group">
+							<label class="control-label col-sm-2" for="email">Name:</label>
+							<div class="col-sm-10">
+								<input type="text" name="name" class="form-control" id="email" pattern="[a-zA-Z]+" title="How can I call u if ur name have numbers :P"  placeholder="Write your Name here..." required>
+							</div>
+						</div>
+                        <div class="form-group">
+							<label class="control-label col-sm-2" for="rollno">RollNo:</label>
+							<div class="col-sm-10">
+								<input type="text" name="rollno" class="form-control"  id="email" pattern="[201][0-9]+{7}" placeholder="Write your rollno here..." required>
+							</div>
+						</div>
+                        <div class="form-group" required>
+							<label class="control-label col-sm-2" for="batch">Semester:</label>
+							<div class="col-sm-10">
+							<select class="form-control" name="batch" id="city">
+							<option value="">---Select Batch--</option>
+							<option value="G">G</option>
+							<option value="H">H</option>
+							<option value="I">I</option>
+							</select>
+							</div>
+						</div>
+                        <div class="form-group" required>
+							<label class="control-label col-sm-2" for="year">Year:</label>
+							<div class="col-sm-10">
+							<select class="form-control" name="year" id="year">
+							<option value="">---Select Year--</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+                            <option value="4">4</option>
+							</select>
+							</div>
+						</div>
+                        <div class="form-group">
+							<label class="control-label col-sm-2" for="email">Contact:</label>
+							<div class="col-sm-10">
+								<input type="text" name="contact" class="form-control" pattern="[789][0-9]{9}" title="Enter a valid mobile number" id="email" placeholder="Write your mobile no here..." required>
+							</div>
+						</div>
+                        
+                        <div class="form-group">
+							<label class="control-label col-sm-2" for="email">Email:</label>
+							<div class="col-sm-10">
+								<input type="email" name="email" class="form-control" id="email" placeholder="Write your Email here..." required>
+							</div>
+						</div>
+                        
+						
+                        <div class="form-group">
+							<label class="control-label col-sm-2" for="password">password:</label>
+							<div class="col-sm-10">
+								<input name="password" type="password" class="form-control" id="pass" placeholder="Write your password here..." required>
+							</div>
+						</div>
+                        
+                        <button class="btn btn-primary wow bounceIn" type="submit">Regsiter</a>                       
+						</form>
+						<!--end of form-->
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .container close -->
+    </section><!-- #contact-us close -->
+    <!--
+    footer  start
+    ============================= -->
+    
+    <!--
+    footer-bottom  start
+    ============================= -->
+    <footer id="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="block">
+                        <p>Copyright &copy; 2014 - All Rights Reserved.Design and Developed By Giritharan and Jeevasuriya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	</body>
+</html>
